@@ -1,0 +1,55 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-background-geolocation-lt": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-camera-with-exif": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "socket.io.example"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-background-fetch": {
+      "PACKAGE_NAME": "socket.io.example"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-background-geolocation-lt": {
+      "GOOGLE_API_VERSION": "16.+",
+      "APPCOMPAT_VERSION": "27.+",
+      "OKHTTP_VERSION": "3.12.+",
+      "EVENTBUS_VERSION": "3.0.0",
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-camera-with-exif": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova.plugins.diagnostic": {
+      "ANDROID_SUPPORT_VERSION": "27.+",
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "socket.io.example"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-background-fetch": {
+      "PACKAGE_NAME": "socket.io.example"
+    },
+    "cordova-plugin-cocoalumberjack": {
+      "PACKAGE_NAME": "socket.io.example"
+    }
+  }
+}

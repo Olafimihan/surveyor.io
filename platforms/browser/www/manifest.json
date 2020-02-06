@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "surveyPlanet",
+  "short_name": "surveyPlanet",
+  "version": "socket.io.example",
+  "description": "A Cordova application that helps auditors pick data remotely.",
+  "author": "DELAF SYSTEMS COMPANY",
+  "icons": [],
+  "start_url": "index.html"
+}

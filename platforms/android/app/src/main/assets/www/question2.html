@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>Sweet Sensation</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    
+    <!-- <link rel="stylesheet" href="css/materialize.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/loaders.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+    <!-- <script src="assets/js/flickity.pkgd.min.js"></script> -->
+
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
+    
+    <link rel="stylesheet" href="assets/css/page.css" media="screen">
+    <script src="js/flickity.min.js" ></script>
+    
+    
+    <script type="text/javascript" >
+        var displayQuestions = ()=>{
+            
+        }
+    
+    </script>
+    
+    
+    <style type="text/css">
+        .carousel {
+            background: skyblue;
+        }
+
+        .carousel-cell {
+            color: white;
+            font-size: 24px;
+            
+            width: 100%;
+            /* height: 70%; */
+            
+            /* display: flex; */
+            align-items: center;
+
+            margin-right: auto;
+            margin-left: auto; 
+            text-align: center;
+            /* background-color: red; */
+            
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+            justify-content: center; */
+        }
+
+        /* .carousel.is-fullscreen .carousel-cell {
+            height: 70%;
+        } */
+
+        h3{
+            margin-top: 50px;
+        }
+
+         
+    </style>
+
+    <script>
+        function load_home() {
+            document.getElementById("body").innerHTML='<object type="text/html" data="register.html" ></object>';
+        }
+
+        var user = localStorage.getItem('usermail');
+        if(!user){
+            // alert('registratuion required...')
+            console.log(window.location.href)
+            window.location = 'register.html'
+            window.open('register.html')
+        }else{
+            // alert('registratuion completed...')
+        }
+        $('document').ready(function(){
+            $('.main-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                contain: true
+            });
+
+        });
+   </script>
+
+   <style >
+       
+   
+   </style>
+   
+</head>
+<body style="background-color: #ff4301">
+    <!-- navbar -->
+    <!-- <div class="navbar navbar-home">
+        <div class="container">
+            <div class="row">
+                <div class="col s3">
+                    <div class="content-left">
+                        <a href="#slide-out" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars"></i></a>                        
+                    </div>
+                </div>
+
+                <div class="col s6">
+                    <div class="content-center">
+                        <a href="index.html"><h2  style="text-align: center" >Sweet Sensation Survey</h2></a>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+    </div> -->
+    <!-- end navbar -->
+
+    
+
+    <h2  style="text-align: center; font-family: 'Times New Roman', Times, serif; color: #ffffff" >Sweet Sensation Survey</h2>
+    
+   
+
+    <div style="margin-top: 20px" class="main-carousel"  data-flickity='{"fullscreen": true, "contain": true, "pageDots": false, "prevNextButtons" : false }'>
+        
+        <div class="carousel-cell">
+            <h3>Did you enjoy our last meal?</h3>
+            <!-- <p style="text-indent: left"> -->
+            <input type="radio" name="one" id="oney" value="yes" >Yes<br>
+            <input type="radio" name="one" id="onen" value="no" >No<br>
+            <input type="radio" name="one" id="onem" value="maybe" >Maybe
+            <!-- </p> -->
+
+        </div>
+
+        <div class="carousel-cell">
+            <h3>Were you properly served during your last visit?</h3>
+            <input type="radio" name="two" id="twoy" value="yes" >Yes<br>
+            <input type="radio" name="two" id="twon" value="no" >No<br>
+            <input type="radio" name="two" id="twom" value="maybe" >Maybe
+        </div>
+
+        <div class="carousel-cell">
+            <h3>Are you willing to come back? </h3>
+            <input type="radio" name="three" id="threey" value="yes" >Yes<br>
+            <input type="radio" name="three" id="threen" value="no" >No<br>
+            <input type="radio" name="three" id="threem" value="maybe" >Maybe
+        </div>
+        
+        <div class="carousel-cell">
+            <h3>Is there any area of our service we should improve on? </h3><br>
+            <input style="margin-top: 100px" type="radio" name="four" id="foury" value="yes" onclick="checker(this.value)" >Yes<br>
+            <input type="radio" name="four" id="fourn" value="no" onclick="checker(this.value)" >No
+            <!-- <input type="radio" name="four" id="fourm" value="maybe" onclick="checker(this.value)" >Maybe -->
+        </div>
+        
+        <div class="carousel-cell" id="resp">
+            <h3>Please state area to improve on </h3><br>
+            <input style="margin-top: 100px" type="text" name="five" id="five" ><br>
+            <!-- <input type="radio" name="three" value="no" >No -->
+        </div>
+
+        <div class="carousel-cell">
+            <button type="button" name="save" id="respsave" class="btn btn-success" >Submit Survey</button>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="bottombar">
+            <div class="container">
+                <div class="desc">
+                    <p>13, Opebi road.</p>
+                    <span>Ikeja Lagos.</span>
+                </div>
+                 
+                <p>Copyright © 2019. All Right Reserved</p>
+            </div>
+        </footer>
+    <!-- end footer -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js" ></script>         
+    <script src="js/socket.js" ></script> 
+
+    <div class="button-group" >
+        <button class="button " id="1" onclick="clickable()" >1</button>
+        <button class="button" id="2" onclick="clickable()" >2</button>
+        <button class="button" id="3" onclick="clickable()" >3</button>
+        <button class="button" id="4" onclick="clickable()" >4</button>
+        <button class="button" id="5" onclick="clickable()" >5</button>
+        <button class="button" id="6" onclick="clickable()" >6</button>
+        <button class="button" id="7" onclick="clickable()" >7</button>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var flkty = new Flickity( '.main-carousel', {
+    on: {
+        ready: function() {
+            console.log('Flickity is ready');
+        },
+        change: function( index ) {
+
+
+            console.log( 'Slide changed to' + index );
+        }
+    }
+    });
+
+    var checker = (val)=>{
+        if(val=='yes'){
+            $('#5').click()
+        }else{
+            $('#6').click()
+        }
+    }
+
+    var clickable = ()=>{
+        var flkty = new Flickity('.main-carousel');
+        var buttonGroup = document.querySelector('.button-group');
+        var buttons = buttonGroup.querySelectorAll('.button');
+
+        buttons = fizzyUIUtils.makeArray( buttons );
+        buttonGroup.addEventListener( 'click', function( event ) {
+            // filter for button clicks
+            if ( !matchesSelector( event.target, '.button' ) ) {
+                return;
+            }
+            var index = buttons.indexOf( event.target );
+            flkty.select( index );
+        });
+
+    }
+
+</script>
